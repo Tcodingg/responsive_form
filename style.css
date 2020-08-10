@@ -29,7 +29,6 @@
 }
 .icon {
   flex: 1;
-
   font-weight: bold;
 }
 .get-a-quote {
@@ -74,7 +73,7 @@
 }
 /* navivation ends------------- */
 
-/* form */
+/* form starts---------------------------- */
 .form-background {
   background: #333;
   height: calc(100vh -45px);
@@ -149,7 +148,10 @@ button {
   border: 1px solid #333;
   margin-bottom: 10px;
 }
-/* services info--------------------- */
+
+/* form ends------------------- */
+
+/* services info starts-------------------- */
 .services-background {
   background-color: white;
   margin: 0 var(--mobile-side-margin);
@@ -187,7 +189,7 @@ button {
 .services-info img {
   width: 100%;
 }
-/* sevices end--------- */
+/* sevices info ends--------- */
 
 /* free-quote-- start--------*/
 .free-quote-background {
@@ -230,7 +232,7 @@ button {
   padding: 10px;
   margin-top: 20px;
 }
-/* free-quote-- end--------*/
+/* free-quote ends--------*/
 
 /* --call-us------------------starts */
 .call-us-background {
@@ -244,6 +246,9 @@ button {
 .call-us {
   margin: 0px var(--mobile-side-margin);
   padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .call-us img {
@@ -382,23 +387,86 @@ button {
 
 @media (min-width: 980px) {
   .menu {
-    flex: 1;
-    display: inline-block;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    flex: 1;
+    display: flex;
   }
+  .get-a-quote {
+    margin-right: 0;
+  }
+  .icon {
+  }
+
   .main-menu {
     flex: 1;
-    display: inline-block;
+    display: block;
     background: transparent;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
   }
   .main-menu a {
     border-bottom: none;
     display: inline-block;
   }
-
   .burger {
     visibility: hidden;
   }
+
+  /* end of nav */
+
+  /* start of form-- */
+  .form-content {
+    flex: 2;
+  }
+  .form-info {
+    flex: 2;
+  }
+  .form-info h1 {
+    font-size: 65px;
+  }
+  /* end of form-- */
+
+  /* --service info */
+  .services-info {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .services-info img {
+    height: 50%;
+    width: 100%;
+  }
+
+  /* --service info end */
+
+  /* free quote --- starts */
+  .free-quote-background {
+    height: 50vh;
+  }
+  .free-quote {
+    flex-direction: row;
+    gap: 50px;
+
+    position: relative;
+  }
+  .free-quote img {
+    flex: 1;
+  }
+  .free-quote p {
+    margin-bottom: 50px;
+  }
+  .free-quote a {
+    position: absolute;
+    bottom: 10;
+  }
+  /* free quote -----ends */
+  /* call-us */
+  .call-us {
+    flex-direction: row;
+    gap: 50px;
+  }
+  /* call-us */
 }
