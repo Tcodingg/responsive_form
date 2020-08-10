@@ -349,7 +349,7 @@ button {
   }
   .form-background {
     position: relative;
-    height: 50vh;
+    height: auto;
   }
   .form-content {
     flex-direction: row;
@@ -366,5 +366,39 @@ button {
     flex: 1;
     padding: 20px;
     margin: 0;
+  }
+  .why-choose-us {
+  }
+
+  .features {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .features-items {
+  }
+}
+
+@media (min-width: 980px) {
+  .menu {
+    flex: 1;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-menu {
+    flex: 1;
+    display: inline-block;
+    background: transparent;
+  }
+  .main-menu a {
+    border-bottom: none;
+    display: inline-block;
+  }
+
+  .burger {
+    visibility: hidden;
   }
 }
