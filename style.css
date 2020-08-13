@@ -76,7 +76,7 @@
 /* form starts---------------------------- */
 .form-background {
   position: relative;
-  height: calc(100vh -45px);
+  height: 100vh;
   /* background-image: url(./images/toronto.jpeg); */
   background-color: #333;
 }
