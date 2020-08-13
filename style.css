@@ -81,6 +81,9 @@
   min-height: 100vh;
   /* background-image: url(./images/toronto.jpeg); */
   background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* .layer {
   z-index: 200;
