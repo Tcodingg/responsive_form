@@ -78,7 +78,7 @@
 /* form starts---------------------------- */
 .form-background {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   /* background-image: url(./images/toronto.jpeg); */
   background-color: #333;
 }
@@ -99,6 +99,7 @@
   gap: 30px;
   box-sizing: border-box;
   justify-content: center;
+  align-items: center;
   padding: 30px 0;
   height: 100%;
   margin: 0 var(--mobile-side-margin);
