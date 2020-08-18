@@ -34,7 +34,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
-  submitingSuccess();
 });
 
 function checkInputs() {
@@ -59,6 +58,8 @@ function checkInputs() {
   } else {
     setSuccess(phone);
   }
+
+  submitingSuccess();
 }
 
 function setError(input, message) {
@@ -81,13 +82,21 @@ function setSuccess(input) {
 //---------------------- after the validation
 
 function submitingSuccess() {
+  const submissionValidation = document.querySelector(
+    ".submission-validation small"
+  );
+
+  const successMessage = "Thank you! We'll contact you soon!";
+  const errorMessage = " Please check your error and try again";
   if (
     fullName.parentElement.className === "form-control success" &&
     phone.parentElement.className === "form-control success" &&
     email.parentElement.className === "form-control success"
   ) {
-    console.log("its all success!!");
+    submissionValidation.innerText = successMessage;
+
+    document.getElementById("form").reset();
   } else {
-    console.log("not success!!");
+    submissionValidation.innerText = errorMessage;
   }
 }
