@@ -50,18 +50,50 @@
           </div>
           <div class="form">
             <h3>Get In Touch</h3>
-            <form action="">
-              <input type="text" placeholder="Name" name="fullName" />
-              <input type="text" placeholder="Email" name="email" />
-              <input type="text" placeholder="Phone Number" name="phone" />
+            <form action="" id="form">
+              <div class="form-control">
+                <input
+                  id="fullName"
+                  type="text"
+                  placeholder="Name"
+                  name="fullName"
+                />
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Message</small>
+              </div>
+              <div class="form-control">
+                <input
+                  id="email"
+                  type="text"
+                  placeholder="Email"
+                  name="email"
+                />
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Message</small>
+              </div>
+              <div class="form-control">
+                <input
+                  id="phone"
+                  type="text"
+                  placeholder="Phone Number"
+                  name="phone"
+                />
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Message</small>
+              </div>
+              <div class="form-control">
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Message: Optional"
+                ></textarea>
+              </div>
 
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Message"
-              ></textarea>
               <button type="submit">submit</button>
             </form>
           </div>

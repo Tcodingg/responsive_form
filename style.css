@@ -52,6 +52,7 @@
   right: 0;
   /* width: 30%; */
   /* border: 1px solid black; */
+  /* position: relative; */
 }
 .burger {
   /* padding-right: 10px; */
@@ -59,18 +60,25 @@
 }
 
 .main-menu {
+  /* padding: 20px; */
+
+  box-sizing: border-box;
   position: absolute;
+  left: 0;
+  top: 7;
   margin-top: 7px;
   background: #333;
-
+  width: 100%;
   display: none;
   z-index: 90;
-  width: 100%;
+  text-align: center;
+  /* padding: 10px 5px; */
 }
 .main-menu a {
   display: block;
-  text-align: left;
-  padding-left: 10px;
+
+  padding-top: 20px;
+  margin-top: 0px;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -98,6 +106,7 @@
   top: 0;
   bottom: 0;
 } */
+
 .form-content {
   display: flex;
   flex-direction: column;
@@ -141,7 +150,7 @@ button {
   width: calc(100% - 20px);
   width: 100%;
   padding: 10px;
-  margin: 7px 10px;
+  margin: 15px 10px;
   box-sizing: border-box;
   background-color: white;
   font-size: 16px;
@@ -160,7 +169,6 @@ button {
   width: calc(100% - 20px);
   outline: none;
 }
-
 .form button {
   width: calc(100% - 20px);
   font-size: 16px;
@@ -169,6 +177,44 @@ button {
   border-radius: 5px;
   border: 1px solid #333;
   margin-bottom: 10px;
+}
+.form-control {
+  position: relative;
+}
+.form-control i {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  color: black;
+  visibility: hidden;
+}
+.form-control.success i.fa-check-circle-o {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  visibility: hidden;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+/* .form-control.error input {
+  border-color: yellow;
+} */
+
+.form-control.error small {
+  visibility: visible;
 }
 
 /* form ends------------------- */
@@ -418,7 +464,12 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
-  .features-items {
+  .main-menu {
+    margin-top: 0;
+  }
+  .main-menu a {
+    margin-top: 0;
+    /* padding: 0 00px 0 40px; */
   }
 }
 
@@ -442,13 +493,17 @@ button {
     display: block;
     background: transparent;
     width: 100%;
-
-    padding: 0;
-    margin: 0;
+    text-align: right;
   }
   .main-menu a {
     border-bottom: none;
     display: inline-block;
+    padding: 0;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-top: 0;
   }
   .burger {
     visibility: hidden;
@@ -542,7 +597,7 @@ button {
     width: 300px; */
     width: 200px;
     height: 150px;
-    left: 300px;
+    left: 250px;
     top: 250px;
   }
   .call-us-info {
