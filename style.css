@@ -396,6 +396,8 @@ button {
 
 /* footer----starts */
 .footer-background {
+  display: flex;
+  flex-direction: column;
 }
 .footer-background a {
   color: black;
@@ -633,7 +635,18 @@ button {
   }
   /* why choose us end--------- */
 
+  /* .services-footer {
+    flex-direction: row;
+  } */
+
+  .footer-background {
+    flex-direction: row;
+  }
+
   @media (min-width: 3000px) {
+    :root {
+      --imac-side-margin: 14%;
+    }
     .nav {
       margin: 0 var(--imac-side-margin);
     }
