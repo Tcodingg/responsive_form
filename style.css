@@ -642,31 +642,8 @@ button {
   .footer-background {
     flex-direction: row;
   }
+}
 
-  @media (min-width: 3000px) {
-    :root {
-      --imac-side-margin: 14%;
-    }
-    .nav {
-      margin: 0 var(--imac-side-margin);
-    }
-    .form-content {
-      margin: 0 var(--imac-side-margin);
-    }
-
-    .services {
-      padding: 0 var(--imac-side-margin);
-    }
-    .free-quote {
-      margin: 0 var(--imac-side-margin);
-    }
-
-    .call-us {
-      margin: 0px var(--imac-side-margin);
-    }
-
-    .service-area {
-      margin: 0px var(--imac-side-margin);
-    }
-  }
+@media (min-width: 3000px) {
+  --mobile-side-margin: 14%;
 }
