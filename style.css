@@ -8,6 +8,7 @@
 :root {
   --mobile-side-margin: 7%;
   --mobile-top-bottom-padding: 50px;
+  --imac-side-margin: 14%;
 }
 small {
   font-size: 15px;
@@ -631,4 +632,28 @@ button {
     grid-template-columns: repeat(4, 1fr);
   }
   /* why choose us end--------- */
+
+  @media (min-width: 3000px) {
+    .nav {
+      margin: 0 var(--imac-side-margin);
+    }
+    .form-content {
+      margin: 0 var(--imac-side-margin);
+    }
+
+    .services {
+      padding: 0 var(--imac-side-margin);
+    }
+    .free-quote {
+      margin: 0 var(--imac-side-margin);
+    }
+
+    .call-us {
+      margin: 0px var(--imac-side-margin);
+    }
+
+    .service-area {
+      margin: 0px var(--imac-side-margin);
+    }
+  }
 }
