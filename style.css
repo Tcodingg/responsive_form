@@ -657,3 +657,6 @@ button {
     }
   }
 }
+@media(min-width:3300px){
+  --mobile-side-margin: 17%;
+}
